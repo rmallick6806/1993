@@ -40,11 +40,11 @@
 <body>
     <section>
     <div class="jumbotron bg-gray">
+        <a data-spy="affix" data-offset-top="600" href="../index.html" class="btn btn-primary montserrat animated fadeIn"><i class="lnr lnr-arrow-left"></i> &nbsp; Take me home</a>
         <div class="container">
-            <a href="../index.html" class="btn btn-primary montserrat"><i class="lnr lnr-arrow-left"></i> &nbsp; Take me home</a>
             <div class="row">
-                <div class="col-md-12">
-                    <h1><strong class="montserrat text-huge">OUR PHILOSOPHY</strong></h1>
+                <div class="col-md-12 animated fadeIn">
+                    <h1><strong class="montserrat">OUR PHILOSOPHY</strong></h1>
                     <p class="montserrat text-muted">A website is the centerpiece of a community that lives online. Make it worth the visit.</p>
                 </div>
             </div>
@@ -55,23 +55,23 @@
     <div class="jumbotron bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h1><strong class="montserrat text-large">THE TEAM</strong></h1>
-                    <p class="montserrat text-muted">A website is the centerpiece of a community that lives online.</p>
+                <div class="col-md-12 animated fadeIn">
+                    <h1><strong class="montserrat">THE TEAM</strong></h1>
+                    <p class="montserrat text-muted">Our world class team of subject matter experts.</p>
                 </div>
             </div>
             <div class="row text-center margin-top-20">
-              <div class="col-sm-6 col-md-3">
+              <div class="col-sm-6 col-md-3 animated fadeInUp">
                 <div class="thumbnail">
                   <!-- <img src="..." alt="..."> -->
                   <div class="caption">
                     <h3 class="montserrat"><strong>WILL HUNTER</strong></h3>
-                    <p class="text-muted">We design and build for web and mobile. We invent campaigns that delight the world.</p>
+                    <p class="text-muted">Entrepreneur and web designer once bent on world domination, now settles for internet DOM.</p>
                     <p><a href="#" class="btn btn-primary" role="button"><i class="fa fa-linkedin-square"></i> Linked In</a> <a href="#" class="btn btn-default" role="button"><i class="fa fa-instagram"></i> Instagram</a></p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3">
+              <div id="delay200ms" class="col-sm-6 col-md-3 animated fadeInUp">
                 <div class="thumbnail">
                   <!-- <img src="..." alt="..."> -->
                   <div class="caption">
@@ -81,7 +81,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3">
+              <div id="delay300ms" class="col-sm-6 col-md-3 animated fadeInUp">
                 <div class="thumbnail">
                   <!-- <img src="..." alt="..."> -->
                   <div class="caption">
@@ -91,7 +91,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3">
+              <div id="delay400ms" class="col-sm-6 col-md-3 animated fadeInUp">
                 <div class="thumbnail">
                   <!-- <img src="..." alt="..."> -->
                   <div class="caption">
@@ -101,15 +101,16 @@
                   </div>
                 </div>
               </div>
+              <p id="delay400ms" class="montserrat animated fadeIn">(we don't like titles)</p>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-white">
         <div class="container">
-            <div class="row">
+            <div class="row animated fadeIn">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4 class="marker"><strong>1993</strong>
                     </h4>
@@ -149,6 +150,16 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#affix-top").affix({
+                offset: { 
+                    top: $("section").outerHeight(true)
+                }
+            });
+        });
+    </script>
 
 </body>
 
