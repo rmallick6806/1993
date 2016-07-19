@@ -39,7 +39,7 @@
 
 <body>
 <section>
-    <video autoplay loop muted poster="img/slapweek.PNG" id="background">
+    <video autoplay loop muted controls="none" poster="img/slapweek.PNG" id="background">
         <source src="img/slapweek.mp4" type="video/mp4">
     </video>
     <div class="container">
@@ -64,7 +64,7 @@
 <div class="jumbotron jumbotron-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 animated slideInUp">
+            <div class="col-md-5 animated slideInLeft">
                 <div id="square"> 
                     <div class="montserrat text-primary text-big">
                         <strong>WE ARE 1993</strong>
@@ -90,12 +90,12 @@
     <div class="container">
         <div class="row margin-top-60">
             <div class="col-md-12 text-center animated fadeIn">
-                    <div class="montserrat">
+                    <h1 class="montserrat">
                         Design <strong class="text-primary">Science</strong>
-                    </div>
+                    </h1>
             </div>
             <div class="col-md-12 text-center animated slideInUp">
-                <p class="text-muted margin-top-20">All that's missing are the white coats and safety goggles.</p>
+                <p class="text-muted margin-top-20">All we're missing are the white coats and safety goggles.</p>
             </div>
         </div>
         <div class="row margin-top-60">
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 animated slideInUp">
+            <div id="delay300ms"  class="col-md-4 animated slideInUp">
                 <div class="panel panel-default">
                     <div class="panel-body">
                     <h1 class="montserrat"><strong>Ux</strong></h1>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 animated slideInUp">
+            <div id="delay500ms"  class="col-md-4 animated slideInUp">
                 <div class="panel panel-default">
                     <div class="panel-body">
                     <h1 class="montserrat"><strong>Qa</strong></h1>
@@ -144,23 +144,26 @@
                     </h3>
                 </div>
             </div>
-            <div class="row margin-top-60">
+            <div class="row margin-top-60 text-center">
                 <div class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/usaf.png" >
+                    U.S. Air Force
                 </div>
-                <div class="col-md-2 animated fadeInUp">
+                <div id="delay200ms" class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/army.png" >
+                    U.S. Army
                 </div>
-                <div class="col-md-2 animated fadeInUp">
+                <div id="delay300ms" class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/au-logo.png" >
+                    American University
                 </div>
-                <div class="col-md-2 animated fadeInUp">
+                <div id="delay400ms" class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/goodworld.png" >
                 </div>
-                <div class="col-md-2 animated fadeInUp">
+                <div id="delay500ms" class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/vans-logo.png" >
                 </div>
-                <div class="col-md-2 animated fadeInUp">
+                <div id="delay600ms" class="col-md-2 animated fadeInUp">
                     <img class="center-img" src="img/orange-amp.png" >
                 </div>
             </div>
@@ -173,7 +176,7 @@
     <!-- Footer -->
     <footer class="bg-white">
         <div class="container">
-            <div class="row">
+            <div class="row animated fadeIn">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4 class="marker"><strong>1993</strong>
                     </h4>
