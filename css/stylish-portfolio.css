@@ -479,26 +479,10 @@ footer {
   -moz-animation-delay: 600ms;
 }
 
-*::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
+video::-webkit-media-controls {
+    display:none !important;
 }
 
-/* Old shadow dom for play button */
-
-*::--webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-/* New shadow dom for play button */
-
-/* This one works */
-
-*::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
 
 /* Custom CSS */
 
@@ -546,15 +530,15 @@ footer {
     font-size: 160px;
 }
 
-.fb { 
+.fb {
 color: inherit;
 }
 
-.fb:hover { 
+.fb:hover {
     color: #3b5998;
 }
 
-.ig { 
+.ig {
 color: inherit;
 }
 
@@ -579,4 +563,8 @@ color: inherit;
     vertical-align: middle;
     text-align: center;
     width: 100%;
+}
+
+.send {
+  margin-bottom: 30px
 }
