@@ -577,7 +577,7 @@ color: inherit;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 100%;
+    min-width: 100%;
 }
 
 .send {
